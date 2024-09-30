@@ -1,0 +1,27 @@
+Table tbody {
+  height: 100px;
+  overflow-y: auto;
+  width: 100%;
+}
+
+/* 
+Table thead,
+Table tbody,
+Table tr,
+Table td,
+Table th {
+  display: block;
+} */
+
+Table tbody td,
+Table tbody th,
+Table thead>tr>th {
+  /* float: left; */
+  position: relative;
+
+  &::after {
+    content: '';
+    clear: both;
+    display: block;
+  }
+}
