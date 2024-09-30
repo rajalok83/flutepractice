@@ -1,7 +1,109 @@
 {
   "variation1": {
+    "label": "Variation 1",
+    "description": "Teentaal2 Variation1",
+    "bolset": [
+      {
+        "bolsubset": [
+          {
+            "label": "Dhan",
+            "label2": "x",
+            "hilight": false
+          },
+          {
+            "label": "Dhin",
+            "label2": "",
+            "hilight": false
+          },
+          {
+            "label": "Dhin",
+            "label2": "",
+            "hilight": false
+          },
+          {
+            "label": "Dha",
+            "label2": "",
+            "hilight": false
+          }
+        ]
+      },
+      {
+        "bolsubset": [
+          {
+            "label": "Dha",
+            "label2": "2",
+            "hilight": false
+          },
+          {
+            "label": "Dhin",
+            "label2": "",
+            "hilight": false
+          },
+          {
+            "label": "Dhin",
+            "label2": "",
+            "hilight": false
+          },
+          {
+            "label": "Dha",
+            "label2": "",
+            "hilight": false
+          }
+        ]
+      },
+      {
+        "bolsubset": [
+          {
+            "label": "Na",
+            "label2": "0",
+            "hilight": false
+          },
+          {
+            "label": "Tin",
+            "label2": "",
+            "hilight": false
+          },
+          {
+            "label": "Tin",
+            "label2": "",
+            "hilight": false
+          },
+          {
+            "label": "Na",
+            "label2": "",
+            "hilight": false
+          }
+        ]
+      },
+      {
+        "bolsubset": [
+          {
+            "label": "TeTe",
+            "label2": "3",
+            "hilight": false
+          },
+          {
+            "label": "Dhin",
+            "label2": "",
+            "hilight": false
+          },
+          {
+            "label": "Dhin",
+            "label2": "",
+            "hilight": false
+          },
+          {
+            "label": "Dha",
+            "label2": "",
+            "hilight": false
+          }
+        ]
+      }
+    ]
+  },
+  "variation2": {
     "label": "Variation 2",
-    "description": "",
+    "description": "Teentaal2 Variation2",
     "bolset": [
       {
         "bolsubset": [

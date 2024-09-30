@@ -19,7 +19,7 @@ const Console = () => {
   const [play, setPlay] = useState(false);
   const [refresh, setRefresh] = useState(false);
   const [start, setStart] = useState(false);
-  const [counter, setCounter] = useState(4);
+  const [counter, setCounter] = useState(5);
   const [allComposition, setAllComposition] = useState({});
   const [allTaalComposition, setAllTaalComposition] = useState({});
   const [compositionDict, setCompositionDict] = useState({});
@@ -108,7 +108,7 @@ const Console = () => {
 
   useEffect(() => {
     setRefresh(!refresh);
-  }, [start, compositionNotes]);
+  }, [start, compositionNotes, variation]);
 
   useEffect(() => {
     setStart(false);
