@@ -29,7 +29,7 @@ const Console = () => {
   // let interrupt = false;
 
   useEffect(() => {
-    axios.get("../src/data/taal.json").then((res) => {
+    axios.get("../src/data/taals/taal.json").then((res) => {
       setTaalDict(res.data);
     });
     axios.get("../src/data/taal_composition_mapping.json").then((res) => {
@@ -67,7 +67,7 @@ const Console = () => {
     setShowBolSet(false);
     // console.log(event.target.value);
     setTaal(event.target.value);
-    axios.get("../src/data/" + event.target.value + "/variations.json").then((res) => {
+    axios.get("../src/data/taals/" + event.target.value + "/variations.json").then((res) => {
       // console.log(res.data);
       setVariationDict(res.data);
     }).catch(() => {
