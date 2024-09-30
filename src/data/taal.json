@@ -6,5 +6,9 @@
   "teentaal2": {
     "label": "Teentaal2",
     "description": "Teentaal another variation"
+  },
+  "keherwa":{
+    "label": "Keherwa",
+    "description": "Keherwa variations"
   }
 }

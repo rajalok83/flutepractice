@@ -10,7 +10,7 @@ const Taal = (props) => {
   const [bpm, setBpm] = useState(props.bpm);
   const [composition, setComposition] = useState(props.composition);
   const [compositionNotesCount, setCompositionNotesCount] = useState(props.compositionNotesCount);
-  const [compositionStartAt, setCompositionStartAt] = useState(props.compositionStartAt);
+
   // console.log(composition);
   let index = 0;
   let noteIndex = 0;
@@ -50,7 +50,6 @@ const Taal = (props) => {
     }
   }, []);
 
-
   return typeof (bolSet) !== 'undefined' &&
     // <Paper sx={{ width: '100%', overflow: 'hidden', flex: 1 }}>
     <Box sx={{ flexGrow: 1 }}>
@@ -62,7 +61,7 @@ const Taal = (props) => {
                 column.bolsubset.map((beat, i) => (
                   <TableCell sx={{ borderLeft: (beat.hilight ? 2 : (i == 0 ? 1 : 0)), borderRight: (beat.hilight ? 2 : (i == column.bolsubset.length - 1 ? 1 : 0)), borderTop: (beat.hilight ? 2 : 0), borderBottom: (beat.hilight ? 2 : 0), backgroundColor: (beat.hilight ? '#77dd77' : '') }}
                     key={beat.label + i}
-                    align="left"
+                    align="center"
                     style={{}}
                   >
                     {beat.label}
@@ -71,8 +70,8 @@ const Taal = (props) => {
               ))}
             </TableRow>
           </TableHead>
-          <TableHead>
-            <TableRow sx={{backgroundColor: "#fff44f"}}>
+          <TableHead sx={{ border: 1 }}>
+            <TableRow sx={{ backgroundColor: "#fff44f", border: 1 }}>
               {secondHeader.map((column, i) => (
                 <TableCell
                   key={column + i}
@@ -93,6 +92,7 @@ const Taal = (props) => {
                       key={"compnote_" + (i * totalBeats + j)}
                       align="center"
                       style={{}}
+                      
                     >
                       {column.label}
                     </TableCell>

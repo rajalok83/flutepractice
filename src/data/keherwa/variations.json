@@ -1,0 +1,56 @@
+{
+  "variation1": {
+    "label": "Variation 1",
+    "description": "Keherwa Variation1",
+    "bolset": [
+      {
+        "bolsubset": [
+          {
+            "label": "Dha",
+            "label2": "x",
+            "hilight": false
+          },
+          {
+            "label": "Ge",
+            "label2": "",
+            "hilight": false
+          },
+          {
+            "label": "Na",
+            "label2": "",
+            "hilight": false
+          },
+          {
+            "label": "Ti",
+            "label2": "",
+            "hilight": false
+          }
+        ]
+      },
+      {
+        "bolsubset": [
+          {
+            "label": "Na",
+            "label2": "0",
+            "hilight": false
+          },
+          {
+            "label": "Ka",
+            "label2": "",
+            "hilight": false
+          },
+          {
+            "label": "Dhi",
+            "label2": "",
+            "hilight": false
+          },
+          {
+            "label": "Na",
+            "label2": "",
+            "hilight": false
+          }
+        ]
+      }
+    ]
+  }
+}

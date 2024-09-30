@@ -19,8 +19,7 @@ const Console = () => {
   const [play, setPlay] = useState(false);
   const [refresh, setRefresh] = useState(false);
   const [start, setStart] = useState(false);
-  const [counter, setCounter] = useState(5);
-  const [allComposition, setAllComposition] = useState({});
+  const [counter, setCounter] = useState(4);
   const [allTaalComposition, setAllTaalComposition] = useState({});
   const [compositionDict, setCompositionDict] = useState({});
   const [composition, setComposition] = useState('');
@@ -34,7 +33,6 @@ const Console = () => {
       setTaalDict(res.data);
     });
     axios.get("../src/data/taal_composition_mapping.json").then((res) => {
-      setAllComposition(res.data);
       // console.log(res.data);
       let inTaalComposition = {};
       let compositions = Object.keys(res.data);
@@ -108,7 +106,7 @@ const Console = () => {
 
   useEffect(() => {
     setRefresh(!refresh);
-  }, [start, compositionNotes, variation]);
+  }, [start, compositionNotes]);
 
   useEffect(() => {
     setStart(false);
@@ -155,22 +153,12 @@ const Console = () => {
 
   const setWaitTimer = (in_counter) => {
     timer = setInterval(() => {
-      // console.log(new Date().getTime());
-      // console.log(interrupt);
       setCounter(in_counter);
       in_counter--;
       if (in_counter == -1) {
-        // if (!interrupt) {
         setStart(!start);
         setPlay(!play);
-        // }
-        // else {
-        //   setPlay(false);
-        //   setStart(false);
-        // }
         resetWaitTimer();
-        // setVariationBolSet(variationBolSet);
-        // setShowBolSet(!showBolSet);
       }
     }, 1000);
   };
@@ -178,7 +166,6 @@ const Console = () => {
   const resetWaitTimer = () => {
     if (timer !== null) {
       clearTimeout(timer);
-      // setCounter(4);
     }
   };
 
