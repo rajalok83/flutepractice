@@ -61,7 +61,7 @@ const Console = () => {
   }, []);
 
   const handleScaleChange = (event) => {
-
+    setScale(event.target.value);
   };
 
   const handleTaalChange = (event) => {
