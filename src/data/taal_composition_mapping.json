@@ -1,11 +1,20 @@
 {
-    "comp0": {
-        "description": "comp0 description",
-        "label": "Comp0",
-        "taals": {
-            "teentaal": {
-                "startAt": 9
-            }
-        }
+  "comp0": {
+    "description": "comp0 description",
+    "label": "Comp0",
+    "taals": {
+      "teentaal": {
+        "startAt": 9
+      }
     }
+  },
+  "raag-bhupali-0": {
+    "description": "Raag Bhupali description",
+    "label": "Raag Bhupali-0",
+    "taals": {
+      "teentaal": {
+        "startAt": 9
+      }
+    }
+  }
 }

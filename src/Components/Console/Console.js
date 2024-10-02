@@ -6,6 +6,7 @@ const { Paper,
 const { useState, useEffect } = React;
 
 const Console = () => {
+  const [scale, setScale] = useState('');
   const [taal, setTaal] = useState('');
   const [taalDict, setTaalDict] = useState({});
   const [variation, setVariation] = useState('');
@@ -26,6 +27,7 @@ const Console = () => {
   const [compositionNotes, setCompositionNotes] = useState([]);
   const [compositionNotesCount, setCompositionNotesCount] = useState(0);
   const [compositionStartAt, setCompositionStartAt] = useState(1);
+  let scaleList = ["C", "C#", "D", "D#", "E", "F", "F#", "G", "Ab", "A", "Bb", "B"] ;
   // let interrupt = false;
 
   useEffect(() => {
@@ -57,6 +59,10 @@ const Console = () => {
       setAllTaalComposition(inTaalComposition);
     });
   }, []);
+
+  const handleScaleChange = (event) => {
+
+  };
 
   const handleTaalChange = (event) => {
     setPlay(false);
@@ -191,6 +197,25 @@ const Console = () => {
         <TableHead>
           <TableRow>
             <TableCell>
+              <FormControl sx={{ m: 1, minWidth: 120 }} size="small">
+                <InputLabel id="select-scale-label">Scale</InputLabel>
+                <Select
+                  labelId="select-scale-label"
+                  id="select-scale"
+                  value={scale}
+                  label="Scale"
+                  onChange={handleScaleChange}
+                >
+                  <MenuItem value="">
+                    <em>None</em>
+                  </MenuItem>
+                  {
+                    scaleList.map((in_scale) =>
+                  <MenuItem key={in_scale} value={in_scale}>{in_scale}</MenuItem>
+                    )
+                  }
+                </Select>
+              </FormControl>
               <FormControl sx={{ m: 1, minWidth: 120 }} size="small">
                 <InputLabel id="select-taal-label">Taal</InputLabel>
                 <Select
